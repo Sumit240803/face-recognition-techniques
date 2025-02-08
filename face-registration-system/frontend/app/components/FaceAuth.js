@@ -49,9 +49,9 @@ const FaceAuth = ({ isLogin }) => {
   };
 
   return (
-    <div>
-      <video ref={videoRef} autoPlay width="300" height="200"></video>
-      <button onClick={captureImage}>{isLogin ? "Login" : "Register"}</button>
+    <div className="m-auto flex flex-col gap-2 w-full">
+      <video className="m-auto border-2 border-black rounded-lg" ref={videoRef} autoPlay width="300" height="200"></video>
+      <button className=" w-fit m-auto p-4 rounded-xl bg-green-200" onClick={captureImage}>{isLogin ? "Login" : "Register"}</button>
       <p>{message}</p>
     </div>
   );
